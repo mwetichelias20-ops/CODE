@@ -1,0 +1,2724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Anchore Loans | Financing Made Simple</title>
+
+<style>
+:root{
+    --primary:#075cf6;
+    --primary-dark:#04389c;
+    --primary-light:#eaf2ff;
+    --navy:#071c3d;
+    --white:#ffffff;
+    --gray:#67758b;
+    --light:#f6f9ff;
+    --border:#dce6f5;
+    --success:#07966c;
+    --warning:#f3a712;
+    --danger:#d92d20;
+    --shadow:0 18px 50px rgba(12,65,160,.13);
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:var(--light);
+    color:var(--navy);
+}
+
+a{
+    text-decoration:none;
+}
+
+button,
+input,
+select,
+textarea{
+    font:inherit;
+}
+
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
+
+/* NAV */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--border);
+}
+
+.navbar{
+    min-height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:22px;
+    font-weight:900;
+    color:var(--primary-dark);
+}
+
+.logo{
+    width:42px;
+    height:42px;
+    border-radius:12px;
+    background:linear-gradient(135deg,var(--primary),#70a4ff);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:23px;
+    font-weight:900;
+}
+
+.navlinks{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.navlinks a{
+    color:#42526b;
+    font-size:14px;
+    font-weight:700;
+}
+
+.btn{
+    border:0;
+    border-radius:12px;
+    padding:13px 19px;
+    cursor:pointer;
+    font-weight:800;
+    transition:.2s;
+}
+
+.btn:hover{
+    transform:translateY(-1px);
+}
+
+.btn-primary{
+    background:linear-gradient(135deg,var(--primary),#377eff);
+    color:white;
+    box-shadow:0 10px 24px rgba(7,92,246,.25);
+}
+
+.btn-outline{
+    background:white;
+    color:var(--primary);
+    border:1px solid #aac6f7;
+}
+
+.btn-soft{
+    background:var(--primary-light);
+    color:var(--primary-dark);
+}
+
+/* HERO */
+
+.hero{
+    padding:80px 0 65px;
+    background:
+    radial-gradient(circle at 88% 25%,#d9e8ff,transparent 32%),
+    linear-gradient(180deg,#fff,#f4f8ff);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.08fr .92fr;
+    gap:55px;
+    align-items:center;
+}
+
+.tag{
+    background:#e5efff;
+    color:var(--primary-dark);
+    font-weight:800;
+    padding:8px 12px;
+    border-radius:100px;
+    display:inline-block;
+    font-size:13px;
+}
+
+.hero h1{
+    margin-top:17px;
+    font-size:clamp(44px,6vw,72px);
+    line-height:1;
+    letter-spacing:-2.5px;
+}
+
+.hero h1 span{
+    color:var(--primary);
+}
+
+.hero-desc{
+    color:var(--gray);
+    font-size:18px;
+    line-height:1.7;
+    margin-top:22px;
+    max-width:630px;
+}
+
+.hero-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:28px;
+}
+
+.trust-row{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+    margin-top:35px;
+}
+
+.trust-card{
+    background:white;
+    padding:16px;
+    border:1px solid var(--border);
+    border-radius:15px;
+}
+
+.trust-card strong{
+    font-size:23px;
+    color:var(--primary-dark);
+}
+
+.trust-card small{
+    display:block;
+    color:var(--gray);
+    margin-top:5px;
+}
+
+.hero-image{
+    background:white;
+    padding:11px;
+    border-radius:28px;
+    box-shadow:var(--shadow);
+    position:relative;
+}
+
+.hero-image img{
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    border-radius:21px;
+}
+
+.rate-card{
+    position:absolute;
+    bottom:30px;
+    left:-25px;
+    background:white;
+    border:1px solid var(--border);
+    border-radius:17px;
+    padding:17px 20px;
+    box-shadow:var(--shadow);
+}
+
+.rate-card strong{
+    font-size:29px;
+    color:var(--primary);
+}
+
+.rate-card small{
+    display:block;
+    color:var(--gray);
+}
+
+/* SECTIONS */
+
+section{
+    padding:70px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:34px;
+}
+
+.section-title h2{
+    font-size:39px;
+    margin-bottom:12px;
+}
+
+.section-title p{
+    color:var(--gray);
+    line-height:1.6;
+    max-width:760px;
+    margin:auto;
+}
+
+.loan-search{
+    display:flex;
+    gap:10px;
+    max-width:620px;
+    margin:0 auto 28px;
+}
+
+.loan-search input{
+    flex:1;
+    border:1px solid var(--border);
+    padding:14px;
+    border-radius:12px;
+}
+
+.loan-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.loan-card{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:19px;
+    padding:20px;
+    box-shadow:0 8px 25px rgba(6,46,110,.06);
+    display:flex;
+    flex-direction:column;
+    gap:11px;
+}
+
+.loan-card:hover{
+    border-color:#98bbf4;
+    box-shadow:var(--shadow);
+}
+
+.loan-icon{
+    width:45px;
+    height:45px;
+    border-radius:13px;
+    background:var(--primary-light);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--primary);
+    font-weight:900;
+    font-size:20px;
+}
+
+.loan-row{
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+    gap:10px;
+}
+
+.loan-card h3{
+    font-size:18px;
+}
+
+.rate{
+    color:var(--success);
+    font-size:16px;
+    font-weight:900;
+    white-space:nowrap;
+}
+
+.loan-card p{
+    color:var(--gray);
+    font-size:13px;
+    line-height:1.55;
+}
+
+.requirements{
+    padding-left:18px;
+    font-size:13px;
+    color:#506079;
+    line-height:1.6;
+}
+
+.badge{
+    display:inline-block;
+    width:max-content;
+    padding:6px 9px;
+    background:#fff2d4;
+    color:#8c5900;
+    border-radius:100px;
+    font-size:11px;
+    font-weight:800;
+}
+
+.card-button{
+    margin-top:auto;
+    padding-top:8px;
+}
+
+/* BENEFITS */
+
+.benefit-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.benefit{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:27px;
+}
+
+.benefit h3{
+    margin:13px 0 8px;
+}
+
+.benefit p{
+    color:var(--gray);
+    line-height:1.6;
+}
+
+/* CTA */
+
+.cta{
+    background:linear-gradient(135deg,#052d82,var(--primary));
+    padding:45px;
+    border-radius:28px;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:25px;
+}
+
+.cta h2{
+    font-size:36px;
+}
+
+.cta p{
+    color:#d7e6ff;
+    margin-top:9px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#061936;
+    color:#aec1e1;
+    padding:50px 0;
+}
+
+footer h4{
+    color:white;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:30px;
+}
+
+footer p{
+    margin-top:10px;
+    line-height:1.6;
+    font-size:13px;
+}
+
+/* MODAL */
+
+.modal{
+    position:fixed;
+    inset:0;
+    z-index:2000;
+    background:rgba(3,18,48,.67);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
+
+.modal.active{
+    display:flex;
+}
+
+.modal-box{
+    width:min(980px,96vw);
+    max-height:92vh;
+    overflow:auto;
+    background:white;
+    border-radius:24px;
+    padding:29px;
+    box-shadow:0 30px 80px rgba(0,0,0,.3);
+}
+
+.modal-small{
+    width:min(520px,96vw);
+}
+
+.modal-head{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    margin-bottom:24px;
+}
+
+.close{
+    border:0;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    cursor:pointer;
+    background:#edf3fd;
+    font-size:22px;
+}
+
+.tabs{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:5px;
+    background:#edf3fd;
+    padding:5px;
+    border-radius:13px;
+    margin-bottom:22px;
+}
+
+.tabs button{
+    border:0;
+    padding:11px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:800;
+    background:transparent;
+}
+
+.tabs button.active{
+    background:white;
+    color:var(--primary);
+}
+
+/* FORMS */
+
+.form-section{
+    border-top:1px solid var(--border);
+    padding-top:23px;
+    margin-top:25px;
+}
+
+.form-section:first-child{
+    border-top:0;
+    margin-top:0;
+}
+
+.form-section h3{
+    margin-bottom:17px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.field{
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+}
+
+.field.full{
+    grid-column:1/-1;
+}
+
+.field label{
+    font-size:13px;
+    font-weight:800;
+    color:#344563;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    border:1px solid #cbd9ec;
+    border-radius:11px;
+    padding:12px 13px;
+    outline:none;
+    background:white;
+}
+
+textarea{
+    min-height:90px;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 0 3px rgba(7,92,246,.1);
+}
+
+.checkbox{
+    display:flex;
+    align-items:flex-start;
+    gap:9px;
+    margin:10px 0;
+    color:#465871;
+    font-size:13px;
+    line-height:1.5;
+}
+
+.checkbox input{
+    width:auto;
+    margin-top:3px;
+}
+
+.notice{
+    background:#edf5ff;
+    border:1px solid #c7ddfd;
+    color:#345b87;
+    border-radius:13px;
+    padding:14px;
+    line-height:1.6;
+    font-size:13px;
+}
+
+.fee-box{
+    background:#f8fbff;
+    border:1px solid var(--border);
+    padding:17px;
+    border-radius:15px;
+    margin-top:14px;
+}
+
+.fee-line{
+    display:flex;
+    justify-content:space-between;
+    padding:7px 0;
+}
+
+.fee-total{
+    border-top:1px solid var(--border);
+    padding-top:11px;
+    margin-top:7px;
+    font-weight:900;
+}
+
+/* CHAT */
+
+.chat-button{
+    position:fixed;
+    bottom:22px;
+    right:22px;
+    z-index:1500;
+    width:62px;
+    height:62px;
+    border-radius:50%;
+    border:0;
+    background:linear-gradient(135deg,var(--primary),#4d8cff);
+    color:white;
+    font-size:26px;
+    cursor:pointer;
+    box-shadow:0 15px 35px rgba(7,92,246,.38);
+}
+
+.chat-panel{
+    position:fixed;
+    right:22px;
+    bottom:94px;
+    z-index:1499;
+    width:min(365px,calc(100vw - 35px));
+    background:white;
+    border:1px solid var(--border);
+    border-radius:20px;
+    box-shadow:0 20px 60px rgba(5,30,70,.25);
+    display:none;
+    overflow:hidden;
+}
+
+.chat-panel.active{
+    display:block;
+}
+
+.chat-header{
+    background:linear-gradient(135deg,#073681,var(--primary));
+    color:white;
+    padding:17px;
+}
+
+.chat-header small{
+    display:block;
+    margin-top:5px;
+    color:#dce9ff;
+}
+
+.chat-messages{
+    height:285px;
+    padding:15px;
+    overflow:auto;
+    background:#f6f9ff;
+}
+
+.message{
+    background:white;
+    padding:10px 12px;
+    border-radius:12px;
+    border:1px solid var(--border);
+    margin-bottom:9px;
+    max-width:82%;
+    font-size:13px;
+    line-height:1.5;
+}
+
+.message.me{
+    margin-left:auto;
+    background:#e7f0ff;
+}
+
+.chat-input{
+    padding:11px;
+    border-top:1px solid var(--border);
+    display:flex;
+    gap:7px;
+}
+
+.hidden{
+    display:none!important;
+}
+
+.success{
+    color:var(--success);
+    font-weight:800;
+    font-size:13px;
+}
+
+.error{
+    color:var(--danger);
+    font-weight:800;
+}
+
+@media(max-width:900px){
+    .hero-grid,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .loan-grid,
+    .benefit-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .navlinks a:not(.btn){
+        display:none;
+    }
+
+    .hero-image img{
+        height:390px;
+    }
+}
+
+@media(max-width:600px){
+    .loan-grid,
+    .benefit-grid,
+    .form-grid,
+    .trust-row{
+        grid-template-columns:1fr;
+    }
+
+    .field.full{
+        grid-column:auto;
+    }
+
+    .hero{
+        padding-top:45px;
+    }
+
+    .cta{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .hero-image img{
+        height:310px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="container navbar">
+
+<div class="brand">
+<div class="logo">A</div>
+Anchore Loans
+</div>
+
+<div class="navlinks">
+<a href="#loans">Loans</a>
+<a href="#benefits">Why Anchore</a>
+<a href="#process">How It Works</a>
+
+<button class="btn btn-outline" onclick="openAuth('login')">
+Sign In
+</button>
+
+<button class="btn btn-primary" onclick="openAuth('register')">
+Apply Now
+</button>
+</div>
+
+</div>
+</nav>
+
+
+<header class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<span class="tag">
+Flexible financing for life's important moments
+</span>
+
+<h1>
+Finance your next
+<span>big move.</span>
+</h1>
+
+<p class="hero-desc">
+Explore personal, auto, education, home, business and specialty
+financing products through one simple digital experience.
+</p>
+
+<div class="hero-actions">
+
+<button class="btn btn-primary"
+onclick="openAuth('register')">
+Apply Now →
+</button>
+
+<a href="#loans" class="btn btn-outline">
+View Loan Options
+</a>
+
+</div>
+
+<div class="trust-row">
+
+<div class="trust-card">
+<strong>40+</strong>
+<small>Loan products</small>
+</div>
+
+<div class="trust-card">
+<strong>650+</strong>
+<small>Suggested co-signer score on selected loans</small>
+</div>
+
+<div class="trust-card">
+<strong>1%–4.5%</strong>
+<small>Illustrative promotional rates*</small>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="hero-image">
+
+<img
+src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1100&q=85"
+alt="Applicant reviewing loan options">
+
+<div class="rate-card">
+<small>Illustrative rate*</small>
+<strong>1.00%</strong>
+<small>Terms and approval requirements apply</small>
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+
+<section id="loans">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Find financing that fits your needs</h2>
+
+<p>
+Browse Anchore Loans products below. Rates shown are design examples
+and are not guaranteed APRs, approvals, or binding credit offers.
+</p>
+
+</div>
+
+<div class="loan-search">
+
+<input
+id="loanSearch"
+placeholder="Search loans..."
+oninput="renderLoans()">
+
+</div>
+
+<div id="loanGrid" class="loan-grid"></div>
+
+</div>
+
+</section>
+
+
+
+<section id="benefits">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Why applicants choose Anchore Loans</h2>
+
+<p>
+Designed to make loan applications simple, transparent and easier
+to understand.
+</p>
+
+</div>
+
+<div class="benefit-grid">
+
+<div class="benefit">
+
+<div class="loan-icon">✓</div>
+
+<h3>Transparent requirements</h3>
+
+<p>
+See common eligibility, income, credit and co-signer requirements
+before submitting your application.
+</p>
+
+</div>
+
+
+<div class="benefit">
+
+<div class="loan-icon">⚡</div>
+
+<h3>Streamlined applications</h3>
+
+<p>
+Submit information once through a clean digital application process.
+</p>
+
+</div>
+
+
+<div class="benefit">
+
+<div class="loan-icon">💬</div>
+
+<h3>Live support</h3>
+
+<p>
+Applicants can use the floating chat button to reach your support team.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="process">
+
+<div class="container">
+
+<div class="cta">
+
+<div>
+
+<h2>Ready to explore your options?</h2>
+
+<p>
+Create an account, verify your email and begin your application.
+</p>
+
+</div>
+
+<button
+class="btn"
+style="background:white;color:#075cf6"
+onclick="openAuth('register')">
+
+Start Application
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<div class="brand" style="color:white">
+
+<div class="logo">A</div>
+
+Anchore Loans
+
+</div>
+
+<p>
+Anchore Loans website prototype. Financing is subject to application,
+underwriting, eligibility and applicable lending laws.
+</p>
+
+</div>
+
+<div>
+
+<h4>Loans</h4>
+
+<p>Personal Loans</p>
+<p>Student Loans</p>
+<p>Auto Financing</p>
+<p>Mortgage</p>
+
+</div>
+
+<div>
+
+<h4>Support</h4>
+
+<p>Application Help</p>
+<p>Privacy</p>
+<p>Terms</p>
+<p>Contact</p>
+
+</div>
+
+</div>
+
+</footer>
+
+
+
+<!-- AUTH MODAL -->
+
+<div id="authModal" class="modal">
+
+<div class="modal-box modal-small">
+
+<div class="modal-head">
+
+<div>
+<h2>Anchore Loans Account</h2>
+<p style="color:#67758b;margin-top:5px">
+Secure account access
+</p>
+</div>
+
+<button class="close" onclick="closeModal('authModal')">×</button>
+
+</div>
+
+
+<div class="tabs">
+
+<button
+id="loginTab"
+class="active"
+onclick="switchAuth('login')">
+Sign In
+</button>
+
+<button
+id="registerTab"
+onclick="switchAuth('register')">
+Create Account
+</button>
+
+</div>
+
+
+<div id="loginForm">
+
+<div class="field">
+<label>Email Address</label>
+<input id="loginEmail" type="email">
+</div>
+
+<div class="field" style="margin-top:13px">
+<label>Password</label>
+<input id="loginPassword" type="password">
+</div>
+
+<button
+class="btn btn-primary"
+style="width:100%;margin-top:18px"
+onclick="sendActivation('login')">
+
+Sign In & Send Activation Code
+
+</button>
+
+</div>
+
+
+<div id="registerForm" class="hidden">
+
+<div class="form-grid">
+
+<div class="field">
+<label>First Name</label>
+<input>
+</div>
+
+<div class="field">
+<label>Last Name</label>
+<input>
+</div>
+
+<div class="field full">
+<label>Email</label>
+<input id="registerEmail" type="email">
+</div>
+
+<div class="field full">
+<label>Password</label>
+<input type="password">
+</div>
+
+</div>
+
+<label class="checkbox">
+
+<input type="checkbox">
+
+<span>
+I agree to electronic communications, Terms of Use and Privacy Notice.
+</span>
+
+</label>
+
+<button
+class="btn btn-primary"
+style="width:100%;margin-top:10px"
+onclick="sendActivation('register')">
+
+Create Account & Send Code
+
+</button>
+
+</div>
+
+
+<div id="verifyArea" class="hidden">
+
+<div class="notice">
+
+A six-digit activation code would normally be sent from your
+Anchore Loans domain email using a secure backend mail server.
+
+</div>
+
+<div class="field" style="margin-top:16px">
+
+<label>Activation Code</label>
+
+<input
+id="activationCode"
+maxlength="6"
+placeholder="Enter 6-digit code">
+
+</div>
+
+<button
+class="btn btn-primary"
+style="width:100%;margin-top:16px"
+onclick="verifyDemoCode()">
+
+Verify Account
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- APPLICATION MODAL -->
+
+<div id="applicationModal" class="modal">
+
+<div class="modal-box">
+
+<div class="modal-head">
+
+<div>
+<h2>Loan Application</h2>
+<p style="color:#67758b;margin-top:5px">
+Complete the information below.
+</p>
+</div>
+
+<button
+class="close"
+onclick="closeModal('applicationModal')">
+×
+</button>
+
+</div>
+
+
+<form onsubmit="submitApplication(event)">
+
+
+<div class="form-section">
+
+<h3>1. Loan Request</h3>
+
+<div class="form-grid">
+
+<div class="field">
+
+<label>Loan Type</label>
+
+<select id="applicationLoan" onchange="updateApplication()"></select>
+
+</div>
+
+
+<div class="field">
+
+<label>Requested Loan Amount</label>
+
+<input
+id="loanAmount"
+type="number"
+min="100"
+oninput="calculateFees()"
+required>
+
+</div>
+
+
+<div class="field">
+
+<label>Requested Term</label>
+
+<select>
+
+<option>6 months</option>
+<option>12 months</option>
+<option>24 months</option>
+<option>36 months</option>
+<option>48 months</option>
+<option>60 months</option>
+<option>72 months</option>
+<option>10 years</option>
+<option>15 years</option>
+<option>30 years</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>Purpose of Loan</label>
+
+<input required>
+
+</div>
+
+</div>
+
+
+<div class="fee-box">
+
+<strong>Estimated Fee Disclosure</strong>
+
+<div class="fee-line">
+
+<span>Illustrative processing / commitment fee (2.5%)</span>
+
+<span id="processingFee">$0.00</span>
+
+</div>
+
+
+<label class="checkbox">
+
+<input
+id="noCollateral"
+type="checkbox"
+onchange="calculateFees()">
+
+<span>
+I do not have collateral available.
+</span>
+
+</label>
+
+
+<div
+id="collateralFeeRow"
+class="fee-line hidden">
+
+<span>
+Illustrative additional collateral-related fee (3%)
+</span>
+
+<span id="collateralFee">$0.00</span>
+
+</div>
+
+
+<div class="fee-line fee-total">
+
+<span>Total estimated fees</span>
+
+<span id="totalFees">$0.00</span>
+
+</div>
+
+
+<label class="checkbox">
+
+<input type="checkbox" required>
+
+<span>
+I understand these are fee estimates only. Any lawful fee must be
+clearly disclosed in the final loan agreement before I accept financing.
+I am not being asked to send money in advance through this website.
+</span>
+
+</label>
+
+</div>
+
+</div>
+
+
+
+<div class="form-section">
+
+<h3>2. Personal Information</h3>
+
+<div class="form-grid">
+
+<div class="field">
+<label>Legal First Name</label>
+<input required>
+</div>
+
+<div class="field">
+<label>Middle Name</label>
+<input>
+</div>
+
+<div class="field">
+<label>Legal Last Name</label>
+<input required>
+</div>
+
+<div class="field">
+<label>Suffix</label>
+<input>
+</div>
+
+<div class="field">
+<label>Date of Birth</label>
+<input type="date" required>
+</div>
+
+<div class="field">
+<label>Social Security / Taxpayer ID</label>
+<input type="password" required>
+</div>
+
+<div class="field">
+<label>Email Address</label>
+<input type="email" required>
+</div>
+
+<div class="field">
+<label>Mobile Number</label>
+<input type="tel" required>
+</div>
+
+<div class="field">
+<label>Citizenship / Residency</label>
+
+<select required>
+
+<option value="">Select</option>
+<option>U.S. Citizen</option>
+<option>Permanent Resident</option>
+<option>Eligible Non-Permanent Resident</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>Government ID Type</label>
+
+<select>
+
+<option>Driver License</option>
+<option>State ID</option>
+<option>Passport</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+<label>ID Number</label>
+<input>
+</div>
+
+<div class="field">
+<label>ID Issuing State / Country</label>
+<input>
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="form-section">
+
+<h3>3. Residential Information</h3>
+
+<div class="form-grid">
+
+<div class="field full">
+<label>Current Street Address</label>
+<input required>
+</div>
+
+<div class="field">
+<label>City</label>
+<input required>
+</div>
+
+<div class="field">
+<label>State</label>
+<input required>
+</div>
+
+<div class="field">
+<label>ZIP Code</label>
+<input required>
+</div>
+
+<div class="field">
+<label>Years at Address</label>
+<input required>
+</div>
+
+<div class="field">
+
+<label>Housing Status</label>
+
+<select>
+
+<option>Own</option>
+<option>Rent</option>
+<option>Live with family</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+<div class="field">
+<label>Monthly Housing Payment</label>
+<input type="number">
+</div>
+
+<div class="field full">
+<label>Previous Address if current address is under 2 years</label>
+<input>
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="form-section">
+
+<h3>4. Employment & Income</h3>
+
+<div class="form-grid">
+
+<div class="field">
+
+<label>Employment Status</label>
+
+<select>
+
+<option>Employed Full-Time</option>
+<option>Employed Part-Time</option>
+<option>Self-Employed</option>
+<option>Student</option>
+<option>Retired</option>
+<option>Unemployed</option>
+
+</select>
+
+</div>
+
+<div class="field">
+<label>Employer / Business Name</label>
+<input>
+</div>
+
+<div class="field">
+<label>Job Title</label>
+<input>
+</div>
+
+<div class="field">
+<label>Employer Phone</label>
+<input>
+</div>
+
+<div class="field">
+<label>Years with Employer</label>
+<input>
+</div>
+
+<div class="field">
+<label>Gross Annual Income</label>
+<input type="number" required>
+</div>
+
+<div class="field">
+
+<label>Pay Frequency</label>
+
+<select>
+
+<option>Weekly</option>
+<option>Biweekly</option>
+<option>Twice Monthly</option>
+<option>Monthly</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+<label>Other Annual Income</label>
+<input type="number">
+</div>
+
+
+<div class="field full">
+
+<label>Other Income Source</label>
+
+<input placeholder="Optional">
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="form-section">
+
+<h3>5. Financial Information</h3>
+
+<div class="form-grid">
+
+<div class="field">
+
+<label>Estimated Credit Score</label>
+
+<select>
+
+<option>800+</option>
+<option>740–799</option>
+<option>700–739</option>
+<option>660–699</option>
+<option>620–659</option>
+<option>Below 620</option>
+<option>Not Sure</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+<label>Monthly Debt Payments</label>
+<input type="number">
+</div>
+
+<div class="field">
+<label>Approximate Savings</label>
+<input type="number">
+</div>
+
+<div class="field">
+<label>Bank Name</label>
+<input>
+</div>
+
+<div class="field">
+
+<label>Bankruptcy within last 7 years?</label>
+
+<select>
+<option>No</option>
+<option>Yes</option>
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>Foreclosure or repossession?</label>
+
+<select>
+<option>No</option>
+<option>Yes</option>
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>Currently past due on debts?</label>
+
+<select>
+<option>No</option>
+<option>Yes</option>
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>Outstanding judgments or liens?</label>
+
+<select>
+<option>No</option>
+<option>Yes</option>
+</select>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div id="loanSpecificFields"></div>
+
+
+
+<div class="form-section">
+
+<h3>6. Co-Signer / Guarantor</h3>
+
+<div class="notice" id="cosignerNotice">
+
+Some products may require or benefit from a qualified co-signer.
+For this prototype, selected products display a suggested minimum
+co-signer score of 650.
+
+</div>
+
+<div class="form-grid" style="margin-top:15px">
+
+<div class="field">
+
+<label>Using a co-signer?</label>
+
+<select>
+
+<option>No</option>
+<option>Yes</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+<label>Co-Signer Full Name</label>
+<input>
+</div>
+
+
+<div class="field">
+<label>Co-Signer Email</label>
+<input type="email">
+</div>
+
+
+<div class="field">
+<label>Co-Signer Phone</label>
+<input type="tel">
+</div>
+
+
+<div class="field">
+<label>Relationship to Applicant</label>
+<input>
+</div>
+
+
+<div class="field">
+<label>Estimated Co-Signer Credit Score</label>
+<input type="number" min="300" max="850" placeholder="650+">
+</div>
+
+
+<div class="field">
+<label>Co-Signer Annual Income</label>
+<input type="number">
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="form-section">
+
+<h3>7. Documents</h3>
+
+<div class="form-grid">
+
+<div class="field">
+
+<label>Government ID</label>
+
+<input type="file">
+
+</div>
+
+
+<div class="field">
+
+<label>Proof of Income</label>
+
+<input type="file">
+
+</div>
+
+
+<div class="field">
+
+<label>Bank Statements</label>
+
+<input type="file">
+
+</div>
+
+
+<div class="field">
+
+<label>Proof of Address</label>
+
+<input type="file">
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="form-section">
+
+<h3>8. Certifications & Authorization</h3>
+
+<label class="checkbox">
+
+<input type="checkbox" required>
+
+<span>
+I certify that all information provided is complete and accurate.
+</span>
+
+</label>
+
+
+<label class="checkbox">
+
+<input type="checkbox" required>
+
+<span>
+I authorize identity verification and, where legally permitted,
+credit-report review for underwriting purposes.
+</span>
+
+</label>
+
+
+<label class="checkbox">
+
+<input type="checkbox" required>
+
+<span>
+I consent to electronic notices, disclosures and communications.
+</span>
+
+</label>
+
+
+<div class="notice">
+
+Final loan rates, APRs, fees, approvals and terms must be determined
+through compliant underwriting. Protected characteristics must never
+be used to approve or deny applicants.
+
+</div>
+
+</div>
+
+
+<button
+class="btn btn-primary"
+style="margin-top:24px"
+type="submit">
+
+Submit Application
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+
+<!-- CHAT -->
+
+<button class="chat-button" onclick="toggleChat()">
+💬
+</button>
+
+
+<div id="chatPanel" class="chat-panel">
+
+<div class="chat-header">
+
+<strong>Anchore Loans Live Support</strong>
+
+<small>
+● Support representative
+</small>
+
+</div>
+
+
+<div id="chatMessages" class="chat-messages">
+
+<div class="message">
+Hello! Welcome to Anchore Loans. How can we help you today?
+</div>
+
+</div>
+
+
+<div class="chat-input">
+
+<input
+id="chatInput"
+placeholder="Write your message..."
+onkeydown="if(event.key==='Enter')sendMessage()">
+
+<button
+class="btn btn-primary"
+onclick="sendMessage()">
+
+Send
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<script>
+
+const loans = [
+
+{name:"Personal Loan",rate:3.9},
+{name:"Secured Personal Loan",rate:2.5},
+{name:"Emergency Loan",rate:4.5},
+{name:"Installment Loan",rate:4.2},
+
+{name:"Student Loan",rate:2.7,cosigner:true},
+{name:"Undergraduate Student Loan",rate:2.4,cosigner:true},
+{name:"Graduate Student Loan",rate:2.6,cosigner:true},
+{name:"Parent Student Loan",rate:3.0},
+
+{name:"Student Loan Refinance",rate:2.3,cosigner:true},
+
+{name:"Auto Loan",rate:3.4},
+{name:"New Car Loan",rate:2.9},
+{name:"Used Car Loan",rate:3.8},
+{name:"Auto Refinance Loan",rate:3.3},
+{name:"Lease Buyout Loan",rate:3.9},
+
+{name:"Mortgage",rate:4.5},
+{name:"Construction Loan",rate:4.4,cosigner:true},
+{name:"Home Equity Loan",rate:3.5},
+
+{name:"Business Loan",rate:4.0,cosigner:true},
+{name:"SBA Loan",rate:3.2,cosigner:true},
+{name:"Startup Loan",rate:4.5,cosigner:true},
+{name:"Working Capital Loan",rate:4.1,cosigner:true},
+{name:"Equipment Financing",rate:3.7,cosigner:true},
+
+{name:"Debt Consolidation Loan",rate:3.6},
+
+{name:"Payday Loan",rate:4.5},
+{name:"Salary Advance",rate:2.0},
+{name:"Buy Now, Pay Later Loan",rate:1.0},
+
+{name:"Medical Loan",rate:3.1},
+{name:"Cosmetic Procedure Financing",rate:3.9},
+
+{name:"Home Improvement Loan",rate:3.2},
+{name:"Solar Financing",rate:2.1},
+
+{name:"Wedding Loan",rate:4.2},
+{name:"Vacation Loan",rate:4.4},
+{name:"Relocation Loan",rate:3.8},
+{name:"Adoption Loan",rate:3.0},
+{name:"Funeral Loan",rate:3.7},
+
+{name:"Agricultural Loan",rate:3.1,cosigner:true},
+{name:"Farm Operating Loan",rate:3.5,cosigner:true},
+{name:"Farm Equipment Loan",rate:3.2,cosigner:true},
+{name:"Livestock Loan",rate:3.8,cosigner:true},
+
+{name:"Mortgage Refinance",rate:4.2},
+{name:"Personal Loan Refinance",rate:3.6},
+{name:"Business Refinance Loan",rate:3.9,cosigner:true},
+
+{name:"Savings-Secured Loan",rate:1.8}
+
+];
+
+
+function renderLoans(){
+
+const grid = document.getElementById("loanGrid");
+
+const search =
+document.getElementById("loanSearch").value.toLowerCase();
+
+const filtered = loans.filter(
+l => l.name.toLowerCase().includes(search)
+);
+
+grid.innerHTML = filtered.map((loan,index)=>`
+
+<div class="loan-card">
+
+<div class="loan-row">
+
+<div class="loan-icon">
+${["$","✓","↗","★","◎"][index%5]}
+</div>
+
+<div class="rate">
+${loan.rate.toFixed(2)}%*
+</div>
+
+</div>
+
+<h3>${loan.name}</h3>
+
+<p>
+Illustrative starting promotional rate.
+Actual APR, fees and eligibility depend on underwriting.
+</p>
+
+${loan.cosigner ? `
+<div class="badge">
+Co-signer may be required • suggested 650+ score
+</div>
+` : ""}
+
+<ul class="requirements">
+
+<li>Identity verification</li>
+
+<li>Income / repayment ability review</li>
+
+<li>Credit review where applicable</li>
+
+${loan.cosigner ? "<li>Qualified co-signer or guarantor may be requested</li>" : ""}
+
+</ul>
+
+<div class="card-button">
+
+<button
+class="btn btn-primary"
+onclick="applyForLoan('${loan.name.replace(/'/g,"\\'")}')">
+
+Apply Now
+
+</button>
+
+</div>
+
+</div>
+
+`).join("");
+
+}
+
+
+
+function openAuth(type){
+
+document
+.getElementById("authModal")
+.classList.add("active");
+
+switchAuth(type);
+
+}
+
+
+
+function switchAuth(type){
+
+const login =
+document.getElementById("loginForm");
+
+const register =
+document.getElementById("registerForm");
+
+const verify =
+document.getElementById("verifyArea");
+
+login.classList.toggle("hidden",type!=="login");
+
+register.classList.toggle("hidden",type!=="register");
+
+verify.classList.add("hidden");
+
+document
+.getElementById("loginTab")
+.classList.toggle("active",type==="login");
+
+document
+.getElementById("registerTab")
+.classList.toggle("active",type==="register");
+
+}
+
+
+
+function sendActivation(type){
+
+let email;
+
+if(type==="login"){
+
+email =
+document.getElementById("loginEmail").value;
+
+}else{
+
+email =
+document.getElementById("registerEmail").value;
+
+}
+
+if(!email){
+
+alert("Please enter your email address.");
+
+return;
+
+}
+
+/*
+
+IMPORTANT:
+
+A real activation email cannot safely be sent directly from browser JS.
+
+Connect this button to your backend API:
+
+fetch("/api/send-activation-code",{
+ method:"POST",
+ headers:{
+   "Content-Type":"application/json"
+ },
+ body:JSON.stringify({email})
+});
+
+Your server can then send email using SMTP from something like:
+
+no-reply@anchoreloans.com
+
+*/
+
+document
+.getElementById("loginForm")
+.classList.add("hidden");
+
+document
+.getElementById("registerForm")
+.classList.add("hidden");
+
+document
+.getElementById("verifyArea")
+.classList.remove("hidden");
+
+}
+
+
+
+/* DEMO ONLY */
+function verifyDemoCode(){
+
+const code =
+document.getElementById("activationCode").value;
+
+if(code.length!==6){
+
+alert("Enter a valid 6-digit activation code.");
+
+return;
+
+}
+
+closeModal("authModal");
+
+document
+.getElementById("applicationModal")
+.classList.add("active");
+
+}
+
+
+
+/* SELECT LOAN */
+
+function applyForLoan(name){
+
+localStorage.setItem(
+"anchoreSelectedLoan",
+name
+);
+
+openAuth("register");
+
+}
+
+
+
+function populateLoanSelect(){
+
+const select =
+document.getElementById("applicationLoan");
+
+select.innerHTML =
+loans.map(
+loan =>
+`<option value="${loan.name}">${loan.name}</option>`
+).join("");
+
+const chosen =
+localStorage.getItem("anchoreSelectedLoan");
+
+if(chosen){
+
+select.value=chosen;
+
+}
+
+updateApplication();
+
+}
+
+
+
+function updateApplication(){
+
+const name =
+document
+.getElementById("applicationLoan")
+.value
+.toLowerCase();
+
+const area =
+document.getElementById("loanSpecificFields");
+
+let html="";
+
+
+
+if(name.includes("student")){
+
+html=`
+
+<div class="form-section">
+
+<h3>Education Information</h3>
+
+<div class="form-grid">
+
+<div class="field">
+<label>School / University</label>
+<input>
+</div>
+
+<div class="field">
+<label>Program / Degree</label>
+<input>
+</div>
+
+<div class="field">
+<label>Enrollment Status</label>
+
+<select>
+<option>Full Time</option>
+<option>Part Time</option>
+<option>Graduated</option>
+</select>
+
+</div>
+
+<div class="field">
+<label>Expected Graduation</label>
+<input type="month">
+</div>
+
+<div class="field">
+<label>Annual Cost of Attendance</label>
+<input type="number">
+</div>
+
+<div class="field">
+<label>Financial Aid Received</label>
+<input type="number">
+</div>
+
+</div>
+
+</div>
+
+`;
+
+}
+
+
+
+else if(
+name.includes("auto") ||
+name.includes("car") ||
+name.includes("lease")
+){
+
+html=`
+
+<div class="form-section">
+
+<h3>Vehicle Information</h3>
+
+<div class="form-grid">
+
+<div class="field">
+<label>Vehicle Purchase Price</label>
+<input type="number">
+</div>
+
+<div class="field">
+<label>Down Payment</label>
+<input type="number">
+</div>
+
+<div class="field">
+<label>Vehicle Year</label>
+<input>
+</div>
+
+<div class="field">
+<label>Make</label>
+<input>
+</div>
+
+<div class="field">
+<label>Model</label>
+<input>
+</div>
+
+<div class="field">
+<label>VIN</label>
+<input>
+</div>
+
+<div class="field">
+<label>Mileage</label>
+<input type="number">
+</div>
+
+<div class="field">
+<label>Dealer / Seller</label>
+<input>
+</div>
+
+</div>
+
+</div>
+
+`;
+
+}
+
+
+
+else if(
+name.includes("mortgage") ||
+name.includes("home equity") ||
+name.includes("construction") ||
+name.includes("home improvement") ||
+name.includes("solar")
+){
+
+html=`
+
+<div class="form-section">
+
+<h3>Property Information</h3>
+
+<div class="form-grid">
+
+<div class="field full">
+<label>Property Address</label>
+<input>
+</div>
+
+<div class="field">
+<label>Property Type</label>
+
+<select>
+<option>Primary Residence</option>
+<option>Second Home</option>
+<option>Investment Property</option>
+</select>
+
+</div>
+
+<div class="field">
+<label>Estimated Property Value</label>
+<input type="number">
+</div>
+
+<div class="field">
+<label>Current Mortgage Balance</label>
+<input type="number">
+</div>
+
+<div class="field">
+<label>Purchase Price / Project Cost</label>
+<input type="number">
+</div>
+
+</div>
+
+</div>
+
+`;
+
+}
+
+
+
+else if(
+name.includes("business") ||
+name.includes("sba") ||
+name.includes("startup") ||
+name.includes("working capital") ||
+name.includes("equipment")
+){
+
+html=`
+
+<div class="form-section">
+
+<h3>Business Information</h3>
+
+<div class="form-grid">
+
+<div class="field">
+<label>Legal Business Name</label>
+<input>
+</div>
+
+<div class="field">
+<label>Entity Type</label>
+
+<select>
+<option>LLC</option>
+<option>Corporation</option>
+<option>Partnership</option>
+<option>Sole Proprietorship</option>
+</select>
+
+</div>
+
+<div class="field">
+<label>EIN</label>
+<input>
+</div>
+
+<div class="field">
+<label>Years in Business</label>
+<input>
+</div>
+
+<div class="field">
+<label>Annual Revenue</label>
+<input type="number">
+</div>
+
+<div class="field">
+<label>Average Monthly Deposits</label>
+<input type="number">
+</div>
+
+<div class="field full">
+<label>Use of Loan Proceeds</label>
+<textarea></textarea>
+</div>
+
+</div>
+
+</div>
+
+`;
+
+}
+
+
+
+else if(
+name.includes("farm") ||
+name.includes("agricultural") ||
+name.includes("livestock")
+){
+
+html=`
+
+<div class="form-section">
+
+<h3>Agricultural Information</h3>
+
+<div class="form-grid">
+
+<div class="field">
+<label>Farm / Operation Name</label>
+<input>
+</div>
+
+<div class="field">
+<label>Total Acreage</label>
+<input type="number">
+</div>
+
+<div class="field">
+<label>Primary Crop / Livestock</label>
+<input>
+</div>
+
+<div class="field">
+<label>Annual Farm Revenue</label>
+<input type="number">
+</div>
+
+<div class="field full">
+<label>Purpose of Agricultural Financing</label>
+<textarea></textarea>
+</div>
+
+</div>
+
+</div>
+
+`;
+
+}
+
+area.innerHTML=html;
+
+}
+
+
+
+/* FEE CALCULATOR */
+
+function calculateFees(){
+
+const amount =
+Number(
+document.getElementById("loanAmount").value
+) || 0;
+
+const processing =
+amount * .025;
+
+const collateral =
+document.getElementById("noCollateral").checked
+? amount * .03
+: 0;
+
+document.getElementById("processingFee").textContent =
+formatCurrency(processing);
+
+document.getElementById("collateralFee").textContent =
+formatCurrency(collateral);
+
+document.getElementById("totalFees").textContent =
+formatCurrency(processing + collateral);
+
+document
+.getElementById("collateralFeeRow")
+.classList.toggle(
+"hidden",
+collateral===0
+);
+
+}
+
+
+
+function formatCurrency(num){
+
+return new Intl.NumberFormat(
+"en-US",
+{
+style:"currency",
+currency:"USD"
+}
+).format(num);
+
+}
+
+
+
+/* CHAT */
+
+function toggleChat(){
+
+document
+.getElementById("chatPanel")
+.classList.toggle("active");
+
+}
+
+
+
+function sendMessage(){
+
+const input =
+document.getElementById("chatInput");
+
+const messages =
+document.getElementById("chatMessages");
+
+const msg =
+input.value.trim();
+
+if(!msg)return;
+
+messages.insertAdjacentHTML(
+"beforeend",
+`
+<div class="message me">
+${escapeHtml(msg)}
+</div>
+`
+);
+
+input.value="";
+
+messages.scrollTop =
+messages.scrollHeight;
+
+
+/*
+
+REAL LIVE CHAT:
+
+Replace this section with:
+
+1. WebSocket
+2. Socket.IO
+3. Firebase
+4. Intercom
+5. Zendesk
+6. Tawk.to
+7. Crisp
+8. Your own backend agent dashboard
+
+*/
+
+
+setTimeout(()=>{
+
+messages.insertAdjacentHTML(
+"beforeend",
+`
+<div class="message">
+Thanks for contacting Anchore Loans.
+A support representative will respond shortly.
+</div>
+`
+);
+
+messages.scrollTop =
+messages.scrollHeight;
+
+},800);
+
+}
+
+
+
+function escapeHtml(text){
+
+return text.replace(
+/[&<>"']/g,
+function(m){
+
+return{
+"&":"&amp;",
+"<":"&lt;",
+">":"&gt;",
+'"':"&quot;",
+"'":"&#039;"
+}[m];
+
+}
+);
+
+}
+
+
+
+/* FORM */
+
+function submitApplication(e){
+
+e.preventDefault();
+
+alert(
+"Application submitted successfully in this UI demo."
+);
+
+closeModal("applicationModal");
+
+}
+
+
+
+/* MODALS */
+
+function closeModal(id){
+
+document
+.getElementById(id)
+.classList.remove("active");
+
+}
+
+
+
+window.onclick=function(event){
+
+if(event.target.classList.contains("modal")){
+
+event.target.classList.remove("active");
+
+}
+
+};
+
+
+
+renderLoans();
+
+populateLoanSelect();
+
+</script>
+
+</body>
+</html>
